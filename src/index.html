@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="focus-js-visible">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Catalina A.</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <div class=""><a href="#"><img class="logo" src="iconos/logotipo.png"></a>
+                <a class="navbar-brand" href="#">
+                    <h5 class="blueTitle"> Catalina Alzamora</h5>
+                </a></div>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#aboutMe">Sobre mí</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a></li>
+                    <a href="#contact"><button type="button" class="btn btn-outline-secondary">Contacto</button></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!---Intro -->
+        <div id="intro" class="row sections">
+            <div class="col-md-5">
+                <img class=" profileImg" src="./iconos/myPhotoProfile.jpg" alt="profile Picture">
+                <div class="middle">
+                    <div class="text">¡Bienvenido!</div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h2 class="myName">Catalina Alzamora</h2>
+                <p>Front-end developer</p>
+                <p>Egresada de Laboratoria</p>
+                <p>Formación en base a proyectos.</p>
+                <a href="#aboutMe"><button type="button" class="btn btn-outline-dark">Ver más</button></a>
+            </div>
+        </div>
+
+        <!---About me -->
+        <div id="aboutMe" class="white sections">
+            <div class="box">
+                <h2 class="blueTitle">Hola</h2 c>
+                <p class="box">Mi nombre es Catalina Alzamora. Estudié en el bootcam de Laboratoria y desde entonces
+                    quedé
+                    maravillada con el mundo del código y la carrera de front-end developer.
+                    Tuve un aprendizaje en base a proyectos y me gusta aprender cosas nuevas constantemente.</p>
+                <button type="submit" onclick="window.open('./iconos/curriculum.pdf')"
+                    class="btn btn-outline-secondary btn-md middleBtn">Curriculum(PDF)</button>
+            </div>
+        </div>
+        <!---Projects -->
+        <div id="projects" class="container marketing sections">
+            <h2 class="whiteTitle">Proyectos</h2>
+            <div class="row projectSection">
+                <div class="col-lg-4">
+                    <a href="https://camirojasserantoni.github.io/SCL012-Social-Network/src/index.html#login"><img
+                            class="projectImg" src="./iconos/bocetoindex.png" alt="project image"></a>
+                    <h3>Boceto</h3>
+                    <p>Red social para artistas digitales</p>
+                    <a href="https://github.com/catalina-alzamora/SCL012-Social-Network"><button
+                            class="btn btn-outline-dark">Github</button></a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="https://catalina-alzamora.github.io/SCL012-data-lovers/src/index.html"><img
+                            class="projectImg" src="./iconos/pokeGoindex.png" alt="project image"></a>
+                    <h3>Poke Go</h3>
+                    <p>Base de datos sobre Pokemon Go</p>
+                    <a href="https://github.com/catalina-alzamora/SCL012-data-lovers"><button
+                            class="btn btn-outline-dark">Github</button></a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="https://katsmunoz.github.io/PelisKids/src/index.html"><img class="projectImg"
+                            src="./iconos/peliskidsindex.png" alt="project image"></a>
+                    <h3>PelisKids</h3>
+                    <p>Base de datos sobre películas infantiles</p>
+                    <a href="https://github.com/catalina-alzamora/PelisKids"><button
+                            class="btn btn-outline-dark">Github</button></a>
+                </div>
+            </div>
+        </div>
+        <!---Dev tools -->
+        <div id="tools" class=" white sections">
+            <div class="box">
+                <div class="row">
+                    <ul class="col-lg-4">
+                        <li class="tools">HTML</li>
+                        <li class="tools">CSS</li>
+                        <li class="tools"> Javascript</li>
+                        <li class="tools">Visual Studio Code</li>
+                    </ul>
+                    <ul class="col-lg-4">
+                        <li class="tools">Github</li>
+                        <li class="tools">Bootstrap</li>
+                        <li class="tools">Figma</li>
+                    </ul>
+                    <h2 class="col-lg-4 blueTitle">Dev tools</h2>
+                </div>
+            </div>
+        </div>
+        <!---Contact -->
+        <div id="contact" class="container sections">
+            <h2 class="whiteTitle">Contáctame</h2>
+            <div class="row">
+                <div class="col-lg-4 imgContactDiv"><a href="alzamoracatalina@gmail.com"><img class="contactimg"
+                            src="/iconos/logogmail.png" alt="gmail link"></a></div>
+                <div class="col-lg-4 imgContactDiv"><a href="https://github.com/catalina-alzamora"><img
+                            class="contactimg" src="/iconos/logogato.png" alt="github Link"></a></div>
+                <div class="col-lg-4 imgContactDiv"><a href="https://www.linkedin.com/in/catalina-alzamora/"><img
+                            class="contactimg" src="/iconos/logoin.png" alt="Linkedin link"></a></div>
+            </div>
+        </div>
+        <footer class="container">
+            <p class="float-right"><a href="#">Volver arriba</a></p>
+            <p> Creado por © Catalina Alzamora</p>
+        </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
