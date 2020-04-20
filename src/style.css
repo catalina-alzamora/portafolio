@@ -18,11 +18,14 @@ body{
 .navbar{
   opacity: 0.9;
 }
+.dropdownMenu{
+  display:inline-block;
+}
 .main{
   width: inherit;
   height: inherit;
 }
-.logo{
+.logoImg{
   width: 8%;
   height: 8%;
 }
@@ -52,7 +55,7 @@ body{
 }
 .text {
   color: white;
-  font-size: 80px;
+  font-size: 60px;
 }
 .introText{
   color: rgb(245, 244, 244);
@@ -77,16 +80,18 @@ body{
 }
 .white{
   background:white;
-  margin:0;
+  min-height: 100%;
 }
+
 .projectImg{
   width:80%;
   height:50%;
   margin-bottom:5%;
   }
 .sections{
-  padding:5%;
-  padding-left: 10%;
+  padding: 10%;
+  min-height: 90%;
+
 }
 .projects{
   padding-left:2%;
@@ -104,7 +109,6 @@ margin-left: 40%;
   margin-left: 40%;
 }
 
-
 /*---Media Queries --*/
 @media (max-width: 992px) {
   *{
@@ -121,13 +125,20 @@ margin-left: 40%;
   *{
     font-size: 15px;    
   } 
-.myName{
+  .sections{
+    padding:5%;
+    padding-left: 10%;
+  
+  }
+  .myName{
   margin-top: 0%;
-}
-.projectTitle{
+  }
+  .projectTitle{
   padding-left: 20%;
 }
-
+  .projectImg{
+  width: 65%;
+}
 }
 @media (max-width: 576px) {
   *{
@@ -147,9 +158,6 @@ margin-left: 40%;
   .myName{
     margin-top: 6%;
   }
-  .sections{
-    padding: 5% 0 5 0;
-  }
   .logoSpacing{
     padding-bottom: 15%;
     margin-left: 5%;
@@ -157,9 +165,7 @@ margin-left: 40%;
   .projectSection{
     padding-left: 15%;
   }
-  .sections .white{
-  padding:0;
-}
+
 }
 @media (max-width: 368px){
   *{
@@ -167,14 +173,14 @@ margin-left: 40%;
     margin:0;
     padding:0;
   }
-  .sections .white{
-    padding:0;
-  }
   .contact{
     padding-left: 0;
   }
   .cv{
     margin-left: 18%;
+  }
+  .projectImg{
+    width: 100%;
   }
 }
 

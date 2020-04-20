@@ -34,31 +34,33 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-            <div class=""><a href="#"><img class="logo" src="iconos/logotipo.png"></a>
-                <a class="navbar-brand" href="#">
-                    <h5 class="pinkTitle"> Catalina Alzamora</h5>
-                </a></div>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#aboutMe">Sobre mí</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Proyectos</a></li>
-                    <a href="#contact"><button type="button" class="btn btn-outline-secondary">Contacto</button></a>
-                </ul>
-            </div>
+        <div class="logoDiv"><a href="#"><img class="logoImg" alt="logo" src="iconos/logotipo.png"></a>
+            <a class="navbar-brand" href="#">
+                <h5 class="pinkTitle"> Catalina Alzamora</h5>
+            </a>
+        </div>
+        <button aria-label="Dropdown Menu" class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto links">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutMe">Sobre mí</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Proyectos</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a></li>
+            </ul>
         </div>
     </nav>
 
-    <main>
+    <main class="allSections">
         <!---Intro -->
-        <section class="row sections">
+        <section class="row sections" id="home">
             <div class="col-md-5">
                 <img class=" profileImg" src="./iconos/me.jpg" alt="profile Picture">
                 <div class="middle">
@@ -76,7 +78,7 @@
         <!---About me -->
         <section id="aboutMe" class="white sections box">
             <h2 class="pinkTitle">Hola</h2>
-            <p class="box">Mi nombre es Catalina Alzamora. Estudié en el bootcam de Laboratoria y desde entonces
+            <p class="box">Mi nombre es Catalina Alzamora. Estudié en el bootcamp de Laboratoria y desde entonces
                 me aventuré en el mundo del código y la carrera de front-end developer.
                 Tuve un aprendizaje en base a proyectos y me gusta aprender cosas nuevas constantemente.
                 Soy médico veterinaria, vegetariana, catlover y en mis tiempos libres me gusta ver series y aprender
@@ -91,26 +93,27 @@
             <div class="row projectSection">
                 <div class="col-lg-4 logoSpacing">
                     <a href="https://camirojasserantoni.github.io/SCL012-Social-Network/src/index.html#login"
-                        target="_blank"><img class="projectImg" src="./iconos/bocetoindex.png" alt="project image"></a>
+                        target="_blank" rel="noopener"><img class="projectImg" src="./iconos/bocetoindex.png"
+                            alt="project image"></a>
                     <h3>Boceto</h3>
                     <p>Red social para artistas digitales</p>
-                    <a href="https://github.com/catalina-alzamora/SCL012-Social-Network" target="_blank"><button
-                            class="btn btn-outline-dark">Github</button></a>
+                    <a href="https://github.com/catalina-alzamora/SCL012-Social-Network" target="_blank"
+                        rel="noopener"><button class="btn btn-outline-dark">Github</button></a>
                 </div>
                 <div class="col-lg-4 logoSpacing">
-                    <a href="https://catalina-alzamora.github.io/SCL012-data-lovers/src/index.html" target="_blank"><img
-                            class="projectImg" src="./iconos/pokeGoindex.png" alt="project image"></a>
+                    <a href="https://catalina-alzamora.github.io/SCL012-data-lovers/src/index.html" target="_blank"
+                        rel="noopener"><img class="projectImg" src="./iconos/pokeGoindex.png" alt="project image"></a>
                     <h3>Poke Go</h3>
                     <p>Base de datos sobre Pokemon Go</p>
-                    <a href="https://github.com/catalina-alzamora/SCL012-data-lovers" target="_blank"><button
-                            class="btn btn-outline-dark">Github</button></a>
+                    <a href="https://github.com/catalina-alzamora/SCL012-data-lovers" target="_blank"
+                        rel="noopener"><button class="btn btn-outline-dark">Github</button></a>
                 </div>
                 <div class="col-lg-4 logoSpacing">
-                    <a href="https://katsmunoz.github.io/PelisKids/src/index.html" target="_blank"><img
+                    <a href="https://katsmunoz.github.io/PelisKids/src/index.html" target="_blank" rel="noopener"><img
                             class="projectImg" src="./iconos/peliskidsindex.png" alt="project image"></a>
                     <h3>PelisKids</h3>
                     <p>Base de datos de películas infantiles</p>
-                    <a href="https://github.com/catalina-alzamora/PelisKids" target="_blank"><button
+                    <a href="https://github.com/catalina-alzamora/PelisKids" target="_blank" rel="noopener"><button
                             class="btn btn-outline-dark">Github</button></a>
                 </div>
             </div>
@@ -141,12 +144,12 @@
         <section id="contact" class="container sections">
             <h2 class="contact whiteTitle">Contáctame</h2>
             <div class="row contactDiv">
-                <a href="alzamoracatalina@gmail.com" target="_blank"><img class="contactimg"
+                <a href="alzamoracatalina@gmail.com" target="_blank" rel="noopener"><img class="contactimg"
                         src="./iconos/logogmail.png" alt="gmail link"></a>
-                <a href="http://github.com/catalina-alzamora" target="_blank"><img class="contactimg"
+                <a href="http://github.com/catalina-alzamora" target="_blank" rel="noopener"><img class="contactimg"
                         src="./iconos/logogithub.png" alt="github link"></a>
-                <a href="http://www.linkedin.com/in/catalina-alzamora/" target="_blank"><img class="contactimg"
-                        src="./iconos/logoin.png" alt="linkedin link"></a>
+                <a href="http://www.linkedin.com/in/catalina-alzamora/" target="_blank" rel="noopener"><img
+                        class="contactimg" src="./iconos/logoin.png" alt="linkedin link"></a>
             </div>
         </section>
         <footer class="container">
