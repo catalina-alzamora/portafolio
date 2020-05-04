@@ -6,7 +6,7 @@
   font-size:large;
   max-width: 100%;
   font-family: 'Baloo 2', cursive;
-  font-size: 22px;
+  font-size: 20px;
 }
 body{
   background: linear-gradient(180deg, #F67280 0%, #8CA5CA 32.81%);  
@@ -138,6 +138,9 @@ margin-left: 40%;
 }
   .projectImg{
   width: 65%;
+}
+.logoImg{
+  display: none;
 }
 }
 @media (max-width: 576px) {
