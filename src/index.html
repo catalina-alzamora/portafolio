@@ -25,6 +25,7 @@
     <meta name="theme-color" content="#ffffff">
     <!-- -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animate.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
@@ -40,13 +41,13 @@
                 <h5 class="pinkTitle"> Catalina Alzamora</h5>
             </a>
         </div>
-        <button aria-label="Dropdown Menu" class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-            data-target="#navbarResponsive">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-label="Dropdown Menu">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto links">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#home">Home</a></li>
                 <li class="nav-item">
@@ -56,6 +57,18 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contacto</a></li>
             </ul>
+
+            <!--Probando iconos en nav 
+                <ul class="iconNav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home"><img class="icons" src="iconos/casa.png"></a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutMe"><img class="icons" src="iconos/cara.png"></a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects"><img class="icons" src="iconos/carpeta.png"></a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact"><img class="icons" src="iconos/correo.png"></a></li>
+            </ul> -->
         </div>
     </nav>
 
@@ -65,15 +78,16 @@
             <div class="col-md-5">
                 <img class=" profileImg" src="./iconos/me.jpg" alt="profile Picture">
                 <div class="middle">
-                    <div class="text">¡Bienvenido!</div>
+                    <div class="text">¡Hola!</div>
                 </div>
             </div>
             <div class="col-md-7 introText">
-                <h2 class="myName">Catalina Alzamora</h2>
+                <h2 class="myName animated shake">Catalina Alzamora</h2>
                 <p>Front-end developer</p>
                 <p>Egresada de Laboratoria</p>
                 <p>Formación en base a proyectos.</p>
-                <a href="#aboutMe"><button type="button" class="btn btn-outline-light">Ver más</button></a>
+                <a href="#aboutMe"><button type="button" class="btn btn-outline-light">Ver
+                        más</button></a>
             </div>
         </section>
         <!---About me -->
@@ -93,29 +107,36 @@
             <h2 class="whiteTitle projectTitle">Proyectos</h2>
             <div class="row projectSection">
                 <div class="col-lg-4 logoSpacing">
+
                     <a href="https://camirojasserantoni.github.io/SCL012-Social-Network/src/index.html#login"
-                        target="_blank" rel="noopener"><img class="projectImg" src="./iconos/bocetoindex.png"
-                            alt="project image"></a>
+                        target="_blank" rel="noopener">
+                        <img class="projectImg" src="./iconos/bocetoindex.png" alt="project deploy"></a>
                     <h3>Boceto</h3>
                     <p>Red social para artistas digitales</p>
                     <a href="https://github.com/catalina-alzamora/SCL012-Social-Network" target="_blank"
                         rel="noopener"><button class="btn btn-outline-dark">Github</button></a>
+                    <a href="https://camirojasserantoni.github.io/SCL012-Social-Network/src/index.html#login"
+                        target="_blank" rel="noopener"><button class="btn btn-outline-dark">Deploy</button></a>
                 </div>
                 <div class="col-lg-4 logoSpacing">
                     <a href="https://catalina-alzamora.github.io/SCL012-data-lovers/src/index.html" target="_blank"
-                        rel="noopener"><img class="projectImg" src="./iconos/pokeGoindex.png" alt="project image"></a>
+                        rel="noopener"><img class="projectImg" src="./iconos/pokeGoindex.png" alt="project deploy"></a>
                     <h3>Poke Go</h3>
                     <p>Base de datos sobre Pokemon Go</p>
                     <a href="https://github.com/catalina-alzamora/SCL012-data-lovers" target="_blank"
                         rel="noopener"><button class="btn btn-outline-dark">Github</button></a>
+                    <a href="https://catalina-alzamora.github.io/SCL012-data-lovers/src/index.html" target="_blank"
+                        rel="noopener"><button class="btn btn-outline-dark">Deploy</button></a>
                 </div>
                 <div class="col-lg-4 logoSpacing">
                     <a href="https://katsmunoz.github.io/PelisKids/src/index.html" target="_blank" rel="noopener"><img
-                            class="projectImg" src="./iconos/peliskidsindex.png" alt="project image"></a>
+                            class="projectImg" src="./iconos/peliskidsindex.png" alt="project deploy"></a>
                     <h3>PelisKids</h3>
                     <p>Base de datos de películas infantiles</p>
                     <a href="https://github.com/catalina-alzamora/PelisKids" target="_blank" rel="noopener"><button
                             class="btn btn-outline-dark">Github</button></a>
+                    <a href="https://katsmunoz.github.io/PelisKids/src/index.html" target="_blank"
+                        rel="noopener"><button class="btn btn-outline-dark">Deploy</button></a>
                 </div>
             </div>
         </section>
